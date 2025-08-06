@@ -5,12 +5,15 @@ import tensorflow as tf
 import joblib
 import os
 import numpy as np
+import pickle
 
 app = FastAPI()
 templates = Jinja2Templates(directory="templates")
 
 model = tf.keras.models.load_model(os.path.join("model", "tf_model.keras"))
-tokenizer = joblib.load(os.path.join("model", "tokenizer.pkl"))
+
+with open(os.path.join("model", "tokenizer.pkl"), "rb") as f:
+    tokenizer = pickle.load(f)
 
 labels = ['fear', 'anger', 'love', 'sadness', 'surprise', 'joy']
 
