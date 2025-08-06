@@ -3,6 +3,4 @@ uvicorn
 tensorflow
 python-multipart
 numpy
-joblib
 jinja2
-pickle

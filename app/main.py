@@ -2,7 +2,6 @@ from fastapi import FastAPI, Request, Form
 from fastapi.responses import HTMLResponse
 from fastapi.templating import Jinja2Templates
 import tensorflow as tf
-import joblib
 import os
 import numpy as np
 import pickle
