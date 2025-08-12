@@ -1,4 +1,4 @@
-motion Detection API 🎯
+# Emotion Detection API 🎯
 
 A FastAPI web application for detecting emotions in text, powered by a **Bidirectional LSTM** model trained with TensorFlow/Keras.
 
